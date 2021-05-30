@@ -3,21 +3,20 @@ function etch(event) {
 }
 
 const button = document.querySelector('button');
-button.addEventListener('click', newGrid); 
+button.addEventListener('click', inputSize); 
 
-function newGrid() {
-    const size = inputSize(); 
+function newGrid(size) { 
     grid(size); 
 }
 
 function inputSize(){
     let size; 
 
-    do {
-        size = parseInt(prompt('Enter new sky size to paint over (1-100)', '16'));
-    } while (isNaN(size) || size > 100 || size < 1)  
+    size = parseInt(prompt('Enter new sky size to paint over (1-100)', '16'));
 
-    return size; 
+    if (!isNaN(size) && size < 101 && size > 0){  
+        newGrid(size); 
+    }
 
 }
 

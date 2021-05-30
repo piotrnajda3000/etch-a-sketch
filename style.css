@@ -46,10 +46,10 @@ button {
 
     display: grid;
 
-    background-image: url('https://vfxblogsite.files.wordpress.com/2019/11/bfb30-096_0010_wvg_v182_1069ab.jpg');
-    
-    background-position-x: center;
-    background-repeat:no-repeat;
+    background: rgb(255,181,1);
+    background: linear-gradient(180deg, rgba(255,181,1,1) 0%, rgba(116,30,1,1) 100%, rgba(0,212,255,1) 100%);
+
+
 }
 
 .square {
@@ -59,4 +59,13 @@ button {
 .etch { 
     background-color: lightskyblue !important;
     z-index: 999;
+}
+
+#again {
+    color: crimson;
+    text-decoration: underline;
+}
+
+#again:hover {
+    cursor: pointer;
 }
