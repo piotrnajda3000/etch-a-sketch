@@ -3,6 +3,7 @@ body {
     margin: 0;
 
     background-color:ghostwhite;
+
     width: 100vw;
     height: 100vh;
 
@@ -19,7 +20,6 @@ body {
     display: flex;
     flex-direction: column;
  
-
 }
 
 button {
@@ -31,7 +31,9 @@ button {
 }
 
 
-#squares-container {
+#squares-container {    
+
+    max-width: 100vw;
 
     /* Make it square */ 
     width: 95vh;

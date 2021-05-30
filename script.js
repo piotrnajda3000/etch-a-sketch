@@ -51,5 +51,6 @@ function grid(size) {
 function initializeDrawing() {
     const squares = document.querySelectorAll('.square'); 
     squares.forEach(square => square.addEventListener('mouseenter', etch));
+    squares.forEach(square => square.addEventListener('touchstart', etch));
 
 }
