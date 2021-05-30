@@ -14,7 +14,7 @@ function inputSize(){
     let size; 
 
     do {
-        size = parseInt(prompt('Enter new sky size (max 100)', '16'));
+        size = parseInt(prompt('Enter new sky size to paint over (1-100)', '16'));
     } while (isNaN(size) || size > 100 || size < 1)  
 
     return size; 
