@@ -1,31 +1,35 @@
 html {
+    /* Fill the whole mobile device despite search bar */ 
     height: 100%;
+    /* Squares remain square on mobile devices */ 
+    overflow-x: hidden;
 }
 
 body { 
-    
-    height: 100%;
-
     padding: 0;
     margin: 0;
-
     background-color:ghostwhite;
+
+    /* #UI relies on this height*/ 
+    height: 100%;
 
     /* Center the UI */ 
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 #UI {
-    /* Children: button and square container */ 
     display: flex;
+    /* Children of UI: button and square container */ 
     flex-direction: column;
     
-    width: 95vh;
-    height: 95%;
- 
+    /* Using % instead of vh for mobile devices top search bar integration */ 
+    height: 100%;
+
+    /* align the UI children */ 
+    justify-content: center;
+
 }
 
 button {
@@ -36,15 +40,10 @@ button {
     background-color: white;
 }
 
-
 #squares-container {    
-    
-    padding: 0;
-
-    /* Make it square */ 
-
-    width: 100%;
-    height: 100%;
+    /* Make the grid square, but not fill entire page. */ 
+    width: 95vh;
+    height: 95%;
 
     grid-template-columns: repeat(16, auto);
 
@@ -53,16 +52,10 @@ button {
     background: rgb(255,181,1);
     background: linear-gradient(180deg, rgba(255,181,1,1) 0%, rgba(116,30,1,1) 100%, rgba(0,212,255,1) 100%);
 
-
-}
-
-.square {
-    background-color: transparent;
 }
 
 .etch { 
     background-color: lightskyblue !important;
-    z-index: 999;
 }
 
 #again {
