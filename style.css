@@ -1,0 +1,52 @@
+body {
+
+    margin: 0;
+
+    background-color:ghostwhite;
+    width: 100vw;
+    height: 100vh;
+
+    /* Center the UI */ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#UI {
+
+    /* Children: button and square container */ 
+    display: flex;
+    flex-direction: column;
+ 
+
+}
+
+button {
+    font-family: 'Chakra Petch', cursive;
+    margin: 0; 
+    padding: 0;
+    border: 0;
+    background-color: white;
+}
+
+
+#squares-container {
+
+    /* Make it square */ 
+    width: 95vh;
+    height: 95vh;
+
+    grid-template-columns: repeat(16, auto);
+
+    display: grid;
+    
+}
+
+.square {
+    background-color: crimson;
+}
+
+.etch { 
+    background-color: lightskyblue !important;
+}
