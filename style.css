@@ -13,7 +13,7 @@ body {
     background-color:ghostwhite;
 
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 
     /* Center the UI */ 
     display: flex;
