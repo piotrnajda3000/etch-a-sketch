@@ -15,7 +15,7 @@ function inputSize(){
 
     do {
         size = parseInt(prompt('Enter new sky size (max 100)', '16'));
-    } while (isNaN(size) || size > 100)  
+    } while (isNaN(size) || size > 100 || size < 1)  
 
     return size; 
 
