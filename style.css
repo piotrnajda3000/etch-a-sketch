@@ -1,10 +1,12 @@
-html {
-    height: 100%; 
-}
 
 body {
 
-    overflow-x: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;    
+
+    padding: 0;
+    margin: 0;
 
     background-color:ghostwhite;
 
