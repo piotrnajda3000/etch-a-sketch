@@ -12,7 +12,7 @@ function newGrid(size) {
 function inputSize(){
     let size; 
 
-    size = parseInt(prompt('Enter new sky size to paint over (1-100)', '16'));
+    size = parseInt(prompt('Enter new sky size to paint over (1-100)', '8'));
 
     if (!isNaN(size) && size < 101 && size > 0){  
         newGrid(size); 
@@ -23,7 +23,7 @@ function inputSize(){
 const squaresContainer = document.querySelector('#squares-container');
 
 // Initial grid 
-grid(16);
+grid(8);
 
 function grid(size) {
 
