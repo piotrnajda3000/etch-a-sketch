@@ -30,6 +30,8 @@ body {
     /* align the UI children */ 
     justify-content: center;
 
+    border: 1px solid ghostwhite;
+
 }
 
 button {
@@ -40,7 +42,8 @@ button {
     background-color: white;
 }
 
-#squares-container {    
+#squares-container {   
+
     /* Make the grid square, but not fill entire page. */ 
     width: 95vh;
     height: 95%;

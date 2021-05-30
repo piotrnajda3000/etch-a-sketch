@@ -1,5 +1,6 @@
 function etch(event) {
     event.target.classList.add('etch');
+    
 }
 
 const button = document.querySelector('button');
