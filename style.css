@@ -13,7 +13,8 @@ body {
     background-color:ghostwhite;
 
     width: 100vw;
-    height: 100%;
+    height: 100vh;
+    min-height: -webkit-fill-available;
 
     /* Center the UI */ 
     display: flex;
