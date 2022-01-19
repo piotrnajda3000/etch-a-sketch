@@ -1,71 +1,72 @@
 html {
-    /* Fill the whole mobile device despite search bar */ 
-    height: 100%;
-    /* Squares remain square on mobile devices */ 
-    overflow-x: hidden;
+  /* Fill the whole mobile device despite search bar */
+  height: 100%;
+  /* Squares remain square on mobile devices */
+  overflow-x: hidden;
 }
 
-body { 
-    padding: 0;
-    margin: 0;
-    background-color:ghostwhite;
+body {
+  padding: 0;
+  margin: 0;
+  background-color: ghostwhite;
 
-    /* #UI relies on this height*/ 
-    height: 100%;
+  /* #UI relies on this height*/
+  height: 100%;
 
-    /* Center the UI */ 
-    display: flex;
-    justify-content: center;
-    align-items: center;  
+  /* Center the UI */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #UI {
-    display: flex;
-    /* Children of UI: button and square container */ 
-    flex-direction: column;
-    
-    /* Using % instead of vh for mobile devices top search bar integration */ 
-    height: 100%;
+  display: flex;
+  /* Children of UI: button and square container */
+  flex-direction: column;
 
-    /* align the UI children */ 
-    justify-content: center;
+  /* Using % instead of vh for mobile devices top search bar integration */
+  height: 100%;
 
-    border: 1px solid ghostwhite;
+  /* align the UI children */
+  justify-content: center;
 
+  border: 1px solid ghostwhite;
 }
 
 button {
-    font-family: 'Chakra Petch', cursive;
-    margin: 0; 
-    padding: 0;
-    border: 0;
-    background-color: white;
+  font-family: "Chakra Petch", cursive;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: white;
 }
 
-#squares-container {   
+#squares-container {
+  /* Make the grid square, but not fill entire page. */
+  width: 95vh;
+  height: 95%;
 
-    /* Make the grid square, but not fill entire page. */ 
-    width: 95vh;
-    height: 95%;
+  grid-template-columns: repeat(16, auto);
 
-    grid-template-columns: repeat(16, auto);
+  display: grid;
 
-    display: grid;
-
-    background: rgb(255,181,1);
-    background: linear-gradient(180deg, rgba(255,181,1,1) 0%, rgba(116,30,1,1) 100%, rgba(0,212,255,1) 100%);
-
+  background: linear-gradient(
+    180deg,
+    rgba(255, 181, 1, 1) 0%,
+    rgba(116, 30, 1, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
-.etch { 
-    background-color: lightskyblue !important;
+.etch {
+  background-color: lightskyblue;
 }
 
 #again {
-    color: crimson;
-    text-decoration: underline;
+  color: crimson;
+  text-decoration: underline;
 }
 
 #again:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
